@@ -9,5 +9,29 @@ a{
 }
 ul,ol,li{
     list-style: none;
+
+}
+body{
     
+
+
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    background-color: lightblue;
+
+}
+main{
+    height: 60px;
+    background-color: blue;
+
+    
+}
+footer{
+    height: 526px;
+    background-color: tomato;
+
 }
