@@ -11,6 +11,12 @@ ul,ol,li{
     list-style: none;
 
 }
+
+:root{
+    --primary-color: #F07807;
+    --secundary-color: #F7E5D8;
+    --default-shadow: 0 4px 6px #0004;
+} 
 body{
     padding: 0 80px;
     font-family: "Poppins", sans-serif;
@@ -32,7 +38,6 @@ header menu {
     gap: 48px;
 }
 header li {
-    
     padding: 4px 8px;
     transition: .5s;
     
@@ -40,6 +45,15 @@ header li {
 header li:hover{
     background-color: antiquewhite;
     box-shadow: 0 4px 6px #0004;
+}
+header button {
+    height: 48px;
+    width: 120px;
+    background-color: var(--secundary-color);
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--default-shadow);
+
 
 }
 
