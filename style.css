@@ -28,7 +28,6 @@ body{
 header{
     height: 60px;
     width: 100%;
-    position: fixed;
     top: 60px;
     display: flex;
     justify-content: space-between;
@@ -340,3 +339,66 @@ footer{
     height: 525px;
     background-color: tomato;
 }
+@media (max-width: 1024px){
+    header{
+        position: absolute;
+        background-color: initial;
+    }
+    .home{
+        grid-template-rows: none;
+        align-items: center;
+    }
+    .home .container-produtos{
+        display: none;
+        gap: 24px;
+    }
+    header menu{
+        height: 64px;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        color: white;
+        justify-content: space-evenly;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    .produto{
+        width: 100%;
+    }
+    .produto img{
+        width: 100%;
+    }
+    .produto:nth-last-child(3),
+    .produto:nth-last-child(4){
+        display: none;
+    }
+    .cardapio-item.bebidas img{
+        width: auto;
+    }
+    .cardapio-item.bebidas .produto:nth-child(n+4){
+        display: none;
+
+    }
+    .servico-item{
+        flex-direction: column;
+        gap: 32px;
+    }
+                                                                                                                                                     
+    }
+    .servico-card p{
+        width: 320px;
+    }
+    .contatos-container{
+        height: 400px;
+
+    }
+    @media(max-width: 360px){
+        header{
+            
+        }
+    }
